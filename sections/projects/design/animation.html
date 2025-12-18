@@ -1,0 +1,107 @@
+<div class="flex justify-center items-center p-1">
+    <p class="text-white font-serif text-lg font-semibold" data-key="designproject.animation">🔖2D Animation </p>
+</div>
+
+<div class="rounded-lg w-[380px] group relative overflow-hidden shadow-xl/15">
+
+    <!-- Slider wrapper -->
+    <div class="slider3 flex transition-transform duration-500 w-full h-full">
+
+        <!-- Item 1 -->
+        <div class="w-full h-full flex-shrink-0 flex items-center justify-center backface-hidden group relative">
+
+            <img src="../../../src/assets/animation/the-pixels.jpg"
+                class="w-[300px] h-[400px] object-fill rounded-lg shadow-lg border-4 border-indigo-700 group-hover:opacity-10" />
+
+            <!-- Overlay khusus item 1 -->
+            <div class="absolute inset-0 z-10 flex flex-col justify-center items-center 
+            md:opacity-0 md:group-hover:opacity-100 opacity-100
+            px-[10%] font-serif font-semibold text-base text-white transition duration-300 pointer-events-auto">
+                <p class="p-4 font-semibold text-lg font-serif" data-key="designproject.animation1">
+                    This video created when join as participant on FlipClip Contest to make 2D pixels animation
+                </p>
+                <button data-modal="videomodal1" data-key="designproject.animplay"
+                    class="mt-4 py-2 px-4 border border-white text-white rounded hover:bg-white hover:text-indigo-800 duration-300 ease-in-out hover:animate-bounce">
+                    Play Video →
+                </button>
+            </div>
+
+        </div>
+
+        <!-- Item 2 -->
+        <div class="w-full h-full flex-shrink-0 flex items-center justify-center backface-hidden group relative">
+            <img src="../../../src/assets/animation/tuki.png"
+                class="w-[300px] h-[400px] object-fill rounded-lg shadow-lg border-4 border-indigo-700 group-hover:opacity-10" />
+
+            <!-- Overlay khusus item 2 -->
+            <div class="absolute inset-0 z-10 flex flex-col justify-center items-center 
+            md:opacity-0 md:group-hover:opacity-100 opacity-100
+            px-[10%] font-serif font-semibold text-base text-white transition duration-300 pointer-events-auto">
+                <p class="p-4 font-semibold text-lg font-serif" data-key="designproject.animation2">
+                    This video was the first 2D project animation story film that i created </p>
+                <button data-modal="videomodal2" data-key="designproject.animplay"
+                    class="mt-4 py-2 px-4 border border-white text-white rounded hover:bg-white hover:text-indigo-800 duration-300 ease-in-out hover:animate-bounce">
+                    Play Video →
+                </button>
+            </div>
+        </div>
+
+
+    </div>
+
+    <div id="videomodal1" class="fixed inset-0 bg-black/80 hidden flex items-center justify-center z-50">
+        <div class="bg-white rounded-lg p-6 max-w-[350px] w-full relative overflow-hidden">
+            <h2 class="text-xl font-serif font-bold mb-4 text-center" data-key="designproject.animmodal">Preview</h2>
+
+            <!-- Slider wrapper -->
+            <div class="aspect-video w-full">
+                <div class="relative flex justify-center items-center h-[180px] perspective-[1000px]">
+                    <video controls preload="none" class="w-full rounded-xl">
+                        <source src="../../../src/assets/animation/the-pixels.mp4" type="video/mp4" />
+                    </video>
+                </div>
+            </div>
+
+            <!-- Tombol navigasi -->
+            <button data-close="videomodal1"
+                class="mt-6 px-4 py-2 font-serif font-semibold bg-indigo-500 text-white rounded block mx-auto
+                        active:scale-95 active:bg-indigo-600 transition duration-150 ease-in-out hover:bg-indigo-600 hover:shadow-md focus:outline-none" data-key="designproject.modalclose">
+                Close
+            </button>
+        </div>
+    </div>
+
+    <div id="videomodal2" class="fixed inset-0 bg-black/80 hidden flex items-center justify-center z-50">
+        <div class="bg-white rounded-lg p-6 max-w-[350px] w-full relative overflow-hidden">
+            <h2 class="text-xl font-serif font-bold mb-4 text-center" data-key="designproject.animmodal">Preview</h2>
+
+            <!-- Slider wrapper -->
+            <div class="aspect-video w-full">
+                <div class="relative flex justify-center items-center h-[380px] perspective-[1000px]">
+                    <video controls preload="none" class="w-full h-full rounded-xl">
+                        <source src="../../../src/assets/animation/tuki.mp4" type="video/mp4" />
+                    </video>
+                </div>
+            </div>
+
+            <!-- Tombol navigasi -->
+            <button data-close="videomodal2"
+                class="mt-6 px-4 py-2 font-serif font-semibold bg-indigo-500 text-white rounded block mx-auto
+                        active:scale-95 active:bg-indigo-600 transition duration-150 ease-in-out hover:bg-indigo-600 hover:shadow-md focus:outline-none" data-key="designproject.modalclose">
+                Close
+            </button>
+        </div>
+    </div>
+
+    <!-- Tombol navigasi -->
+    <button onclick="slider3.slide(-1)" class="absolute left-0.5 top-1/2 transform -translate-y-1/2 text-2xl text-indigo-500
+                active:scale-95 transition duration-150 ease-in-out hover:shadow-md focus:outline-none">⬅️</button>
+    <button onclick="slider3.slide(1)" class="absolute right-0.5 top-1/2 transform -translate-y-1/2 text-2xl text-indigo-500
+                active:scale-95 transition duration-150 ease-in-out hover:shadow-md focus:outline-none">➡️</button>
+
+    <div id="design3-indicators"
+        class="absolute bottom-3 left-1/2 -translate-x-1/2 flex gap-2 bg-black/30 px-3 py-2 rounded-full backdrop-blur-sm">
+        <!-- dots akan di-generate via JS -->
+    </div>
+
+</div>

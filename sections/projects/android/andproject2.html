@@ -1,0 +1,63 @@
+<div class="h-65 w-35 group relative overflow-hidden box-border shadow-xl/15
+    border-4 border-indigo-200 rounded-lg hover:bg-black">
+
+    <img src="../../../src/assets/projek/and1-2.jpg" alt="Groceries Mobile App"
+        class="w-full h-full object-scale-fill transition duration-300 group-hover:opacity-10">
+
+    <div class="absolute inset-0 flex z-9 flex-col justify-center items-center opacity-0 group-hover:opacity-100
+                px-[10%] font-serif font-semibold text-sm text-white text-center transition duration-300">
+        <p data-key="androproject.andcontent2">Online Grocery Store Application for Internship Practicum
+        </p>
+
+        <div class="inset-0 bg-black-40 py-[2%] px-[4%] mt-[10%] border border-white rounded hover:bg-white hover:text-indigo-800 hover:translate-x-1 transition 
+        opacity-0 group-hover:opacity-100 flex items-center justify-center text-white font-bold cursor-pointer" data-key="androproject.andbut"
+            onclick="openModal('andmodal2')">
+            UI Preview
+        </div>
+    </div>
+
+    <div id="andmodal2" class="fixed inset-0 bg-black/80 hidden items-center justify-center z-50">
+        <div class="bg-white rounded-lg p-6 max-w-[350px] w-full relative overflow-hidden">
+            <h2 class="text-xl font-serif font-bold mb-4 text-center" data-key="androproject.andmodal">UI Mobile Preview</h2>
+
+            <!-- Slider wrapper -->
+            <div class="relative flex justify-center items-center h-[400px] perspective-[1000px]">
+                <div class="slider flex transition-transform duration-500 w-full h-full">
+                    <div class="w-full h-full flex-shrink-0 flex items-center justify-center backface-hidden">
+                        <img src="../../../src/assets/projek/and1-1.jpg" class="w-[220px] h-[400px] object-fill rounded-lg shadow-lg" />
+                    </div>
+                    <div class="w-full h-full flex-shrink-0 flex items-center justify-center backface-hidden">
+                        <img src="../../../src/assets/projek/and1-2.jpg" class="w-[220px] h-[400px] object-fill rounded-lg shadow-lg" />
+                    </div>
+                    <div class="w-full h-full flex-shrink-0 flex items-center justify-center backface-hidden">
+                        <img src="../../../src/assets/projek/and1-3.jpg" class="w-[220px] h-[400px] object-fill rounded-lg shadow-lg" />
+                    </div>
+                    <div class="w-full h-full flex-shrink-0 flex items-center justify-center backface-hidden">
+                        <img src="../../../src/assets/projek/and1-4.jpg" class="w-[220px] h-[400px] object-fill rounded-lg shadow-lg" />
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tombol navigasi -->
+            <button onclick="slideModal('andmodal2', -1)"
+                class="absolute left-4 top-1/2 transform -translate-y-1/2 text-2xl text-indigo-500
+                active:scale-95 transition duration-150 ease-in-out hover:shadow-md focus:outline-none">⬅️</button>
+            <button onclick="slideModal('andmodal2', 1)"
+                class="absolute right-4 top-1/2 transform -translate-y-1/2 text-2xl text-indigo-500
+                active:scale-95 transition duration-150 ease-in-out hover:shadow-md focus:outline-none">➡️</button>
+
+            <button onclick="closeModal('andmodal2')" class="mt-6 px-4 py-2 font-serif font-semibold bg-indigo-500 text-white rounded block mx-auto
+            active:scale-95 active:bg-indigo-600 transition duration-150 ease-in-out hover:bg-indigo-600 hover:shadow-md focus:outline-none" data-key="androproject.modalclose">
+                Showless
+            </button>
+        </div>
+    </div>
+
+</div>
+
+</div>
+
+<div class="flex flex-row justify-center gap-[2%]">
+    <p class="font-semibold font-serif text-sm" data-key="androproject.andtools">Using:</p>
+    <p class="text-sm">Javascript, ReactNative</p>
+</div>

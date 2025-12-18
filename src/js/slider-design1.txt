@@ -1,0 +1,83 @@
+let currentSlide_design1 = 0;
+let design1Dots = [];
+let totalSlides_design1 = 0;
+
+
+function updateDesign1() {
+    const slider = document.querySelector('.slider1'); // ✅ aktifkan ini
+    const slideWidth = slider.children[0].getBoundingClientRect().width;
+
+    requestAnimationFrame(() => {
+        slider.style.transform = `translateX(-${currentSlide_design1 * slideWidth}px)`;
+        setActiveDesign1Dot(currentSlide_design1);
+    });
+}
+
+function slideDesign1(direction) {
+    const slider = document.querySelector('.slider1');
+    const totalSlides = slider.children.length;
+    currentSlide_design1 = (currentSlide_design1 + direction + totalSlides) % totalSlides;
+    updateDesign1();
+}
+
+setInterval(() => {
+    slideDesign1(1); // geser ke kanan setiap 3 detik
+}, 4000);
+
+
+// Dot indikator -----------------------------------
+
+function renderDesign1Indicators() {
+    const slider = document.querySelector('.slider1');
+    const wrap = document.getElementById('design1-indicators');
+
+    if (!slider || !wrap) return;
+
+    totalSlides_design1 = slider.children.length;
+    wrap.innerHTML = '';
+    design1Dots = [];
+
+    for (let i = 0; i < totalSlides_design1; i++) {
+        const dot = document.createElement('button');
+        dot.type = 'button';
+        dot.setAttribute('aria-label', `Go to slide ${i + 1}`);
+        dot.className = 'design1-dot block w-2.5 h-2.5 rounded-full bg-white/50 transition-all';
+        // klik dot → loncat ke slide i
+        dot.addEventListener('click', () => {
+            currentSlide_design1 = i;
+            updateDesign1();
+        });
+        wrap.appendChild(dot);
+        design1Dots.push(dot);
+    }
+    setActiveDesign1Dot(currentSlide_design1);
+}
+
+// Update state aktif setiap posisi berubah
+function setActiveDesign1Dot(index) {
+    design1Dots.forEach((dot, i) => {
+        if (i === index) {
+            dot.classList.add('active');
+            // jika pakai Tailwind utility:
+            dot.classList.add('w-3', 'h-3', 'bg-white', 'ring-2', 'ring-white/40');
+            dot.classList.remove('w-2.5', 'h-2.5', 'bg-white/50');
+        } else {
+            dot.classList.remove('active');
+            dot.classList.remove('w-3', 'h-3', 'bg-white', 'ring-2', 'ring-white/40');
+            dot.classList.add('w-2.5', 'h-2.5', 'bg-white/50');
+        }
+    });
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    const waitUntilReady = setInterval(() => {
+        const slider = document.querySelector('.slider1');
+        const wrap = document.getElementById('design1-indicators');
+
+        if (slider && wrap && slider.children.length > 0) {
+            clearInterval(waitUntilReady);
+            renderDesign1Indicators();
+        }
+    }, 100);
+});
+

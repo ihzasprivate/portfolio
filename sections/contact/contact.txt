@@ -1,0 +1,34 @@
+<div class="flex gap-6 p-4">
+
+            <!-- Instagram -->
+            <a href="https://instagram.com" class="p-2 bg-white rounded-full hover:bg-indigo-500 transition">
+                <img src="https://cdn.simpleicons.org/instagram/000000" alt="Instagram" width="38" height="38" />
+            </a>
+
+            <!-- LinkedIn -->
+            <a href="https://linkedin.com"
+                class="p-2 bg-white rounded-full hover:bg-indigo-500 transition text-black hover:text-white">
+                <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" fill="currentColor" viewBox="0 0 24 24">
+                    <title>LinkedIn</title>
+                    <path d="M20.447 20.452h-3.554v-5.569c0-1.327-.027-3.037-1.852-3.037
+                            -1.853 0-2.136 1.445-2.136 2.938v5.668H9.35V9h3.414v1.561h.049
+                            c.476-.9 1.637-1.852 3.368-1.852 3.6 0 4.266 2.368 4.266 5.451v6.292zM5.337
+                            7.433a2.062 2.062 0 1 1 0-4.124 2.062 2.062 0 0 1 0 4.124zM6.814
+                            20.452H3.861V9h2.953z" />
+                </svg>
+            </a>
+
+            <!-- Email (Gmail) -->
+            <a href="mailto:youremail@example.com" class="p-2 bg-white rounded-full hover:bg-indigo-500 transition">
+                <img src="https://cdn.simpleicons.org/gmail/000000" alt="Gmail" width="38" height="38" />
+            </a>
+
+
+            <!-- GitHub -->
+            <a href="https://github.com" class="p-2 bg-white rounded-full hover:bg-indigo-500 transition">
+                <img src="https://cdn.simpleicons.org/github/000000" alt="GitHub" width="38" height="38"
+                    class="transition duration-300 ease-in-out hover:invert" />
+            </a>
+
+
+        </div>

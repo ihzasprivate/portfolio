@@ -1,0 +1,92 @@
+let currentSlide_design2 = 0;
+let design2Dots = [];
+let totalSlides_design2 = 0;
+
+function slideDesign2(direction) {
+    const slider = document.querySelector('.slider2');
+    if (!slider) return;
+
+    const totalSlides = slider.children.length;
+    if (totalSlides === 0) return;
+
+    currentSlide_design2 = (currentSlide_design2 + direction + totalSlides) % totalSlides;
+    updateDesign2();
+}
+
+function updateDesign2() {
+    const slider = document.querySelector('.slider2');
+    if (!slider || slider.children.length === 0) return;
+
+    const slideWidth = slider.children[0].getBoundingClientRect().width;
+    slider.style.transform = `translateX(-${currentSlide_design2 * slideWidth}px)`;
+    setActiveDesign2Dot(currentSlide_design2);
+}
+
+// autoplay
+setInterval(() => {
+    slideDesign2(1);
+}, 3000);
+
+// Dot indikator -----------------------------------
+
+function renderDesign2Indicators() {
+    const slider = document.querySelector('.slider2');
+    const wrap = document.getElementById('design2-indicators');
+
+    console.log("Rendering indicators...");
+    console.log("Slider found:", !!slider);
+    console.log("Wrap found:", !!wrap);
+    console.log("Jumlah slide:", slider?.children.length);
+
+    if (!slider || !wrap) return;
+
+    totalSlides_design2 = slider.children.length;
+    if (totalSlides_design2 === 0) return;
+
+    wrap.innerHTML = '';
+    design2Dots = [];
+
+    for (let i = 0; i < totalSlides_design2; i++) {
+        const dot = document.createElement('button');
+        dot.type = 'button';
+        dot.setAttribute('aria-label', `Go to slide ${i + 1}`);
+        dot.className = 'design1-dot block w-2.5 h-2.5 rounded-full bg-white/50 transition-all'; // boleh ganti ke design2-dot kalau mau
+        dot.addEventListener('click', () => {
+            currentSlide_design2 = i;
+            updateDesign2();
+        });
+        wrap.appendChild(dot);
+        design2Dots.push(dot);
+    }
+
+    setActiveDesign2Dot(currentSlide_design2);
+}
+
+function setActiveDesign2Dot(index) {
+    design2Dots.forEach((dot, i) => {
+        dot.setAttribute('aria-current', i === index ? 'true' : 'false');
+
+        if (i === index) {
+            dot.classList.add('active');
+            dot.classList.add('w-3', 'h-3', 'bg-white', 'ring-2', 'ring-white/40');
+            dot.classList.remove('w-2.5', 'h-2.5', 'bg-white/50');
+        } else {
+            dot.classList.remove('active');
+            dot.classList.remove('w-3', 'h-3', 'bg-white', 'ring-2', 'ring-white/40');
+            dot.classList.add('w-2.5', 'h-2.5', 'bg-white/50');
+        }
+    });
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    const waitUntilReady = setInterval(() => {
+        const slider = document.querySelector('.slider2');
+        const wrap = document.getElementById('design2-indicators');
+
+        if (slider && wrap && slider.children.length > 0) {
+            clearInterval(waitUntilReady);
+            renderDesign2Indicators();
+            updateDesign2(); // pastikan indikator dan posisi awal sinkron
+        }
+    }, 100);
+});

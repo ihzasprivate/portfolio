@@ -1,0 +1,33 @@
+const sidebar = document.querySelector(".sidebar");
+let lastScrollY = window.scrollY;
+
+window.addEventListener("scroll", () => {
+  const currentScrollY = window.scrollY;
+  const direction = currentScrollY > lastScrollY ? "down" : "up";
+
+  if (direction === "down") {
+    sidebar.style.transform = "translateY(-50%) scale(1.02)";
+    sidebar.style.boxShadow = "0 12px 24px rgba(0,0,0,0.2)";
+  } else {
+    sidebar.style.transform = "translateY(50%) scale(1.02)";
+    sidebar.style.boxShadow = "0 -12px 24px rgba(0,0,0,0.2)";
+  }
+
+  lastScrollY = currentScrollY;
+
+  // Reset efek setelah scroll berhenti
+  clearTimeout(window.scrollTimeout);
+
+  if (direction === "down") {
+    window.scrollTimeout = setTimeout(() => {
+      sidebar.style.transform = "translateY(-10%)";
+      sidebar.style.boxShadow = "0 8px 100px rgb(255, 255, 255)";
+    }, 300);
+  } else {
+    window.scrollTimeout = setTimeout(() => {
+      sidebar.style.transform = "translateY(10%)";
+      sidebar.style.boxShadow = "0 8px 100px rgb(255, 255, 255)";
+    }, 300);
+  }
+
+});

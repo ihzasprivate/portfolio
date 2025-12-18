@@ -1,0 +1,10 @@
+<div class="flex flex-row justify-center bg-white">
+                <div
+                    class="carousel flex overflow-x-auto gap-10 snap-x snap-mandatory max-w-[80%] mx-auto px-4 py-6 custom-scrollbar">
+                    <img src="../assets/mapp1.png" class="w-[300px] flex-shrink-0 snap-center rounded-lg shadow-lg" />
+                    <img src="../assets/todoapp.png" class="w-[300px] flex-shrink-0 snap-center rounded-lg shadow-lg" />
+                    <img src="../assets/todoapp.png" class="w-[300px] flex-shrink-0 snap-center rounded-lg shadow-lg" />
+                    <img src="../assets/todoapp.png" class="w-[300px] flex-shrink-0 snap-center rounded-lg shadow-lg" />
+                    <img src="../assets/todoapp.png" class="w-[300px] flex-shrink-0 snap-center rounded-lg shadow-lg" />
+                </div>
+            </div>

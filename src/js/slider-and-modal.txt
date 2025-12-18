@@ -1,0 +1,89 @@
+Item 1
+--------------------------------------------------------------------------------
+
+
+
+let currentSlide2 = 0;
+let autoplayInterval2;
+
+function startAutoplay() {
+  autoplayInterval2 = setInterval(() => {
+    slideModal2(1);
+  }, 3000);
+}
+
+function stopAutoplay() {
+  clearInterval(autoplayInterval2);
+}
+
+function openModal2() {
+  document.getElementById('modal2').classList.remove('hidden');
+  document.getElementById('modal2').classList.add('flex');
+  updateSlider2();
+  // startAutoplay();
+}
+
+function closeModal2() {
+  document.getElementById('modal2').classList.add('hidden');
+  document.getElementById('modal2').classList.remove('flex');
+  // stopAutoplay();
+}
+
+function slideModal2(direction) {
+  const slider = document.querySelector('#modal2 .slider');
+  const totalSlides = slider.children.length;
+  currentSlide2 = (currentSlide2 + direction + totalSlides) % totalSlides;
+  updateSlider2();
+}
+
+function updateSlider2() {
+  const slider = document.querySelector('#modal2 .slider');
+  const slideWidth = slider.children[0].offsetWidth;
+  slider.style.transform = `translateX(-${currentSlide2 * slideWidth}px)`;
+}
+
+
+
+
+
+Item 2
+--------------------------------------------------------------------------------
+
+let currentSlide3 = 0;
+let autoplayInterval3;
+
+function startAutoplay() {
+  autoplayInterval3 = setInterval(() => {
+    slideModal3(1);
+  }, 3000);
+}
+
+function stopAutoplay() {
+  clearInterval(autoplayInterval3);
+}
+
+function openModal3() {
+  document.getElementById('modal3').classList.remove('hidden');
+  document.getElementById('modal3').classList.add('flex');
+  updateSlider3();
+  // startAutoplay();
+}
+
+function closeModal3() {
+  document.getElementById('modal3').classList.add('hidden');
+  document.getElementById('modal3').classList.remove('flex');
+  // stopAutoplay();
+}
+
+function slideModal3(direction) {
+  const slider = document.querySelector('#modal3 .slider');
+  const totalSlides = slider.children.length;
+  currentSlide3 = (currentSlide3 + direction + totalSlides) % totalSlides;
+  updateSlider3();
+}
+
+function updateSlider3() {
+  const slider = document.querySelector('#modal3 .slider');
+  const slideWidth = slider.children[0].offsetWidth;
+  slider.style.transform = `translateX(-${currentSlide3 * slideWidth}px)`;
+}

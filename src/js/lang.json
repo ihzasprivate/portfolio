@@ -1,0 +1,136 @@
+{
+    "en": {
+        "sidebar": {
+            "tab1": "About",
+            "tab2": "💼 Projects",
+            "tab3": "📞 Contact"
+        },
+        "hero": {
+            "title": "Frontend Developer, Designer & <br>Digital Art",
+            "subtitle": "About me"
+        },
+        "intro": {
+            "title": "Hello, my name is Muhammad Ihza Zuhendra. <br>Nice to meet you.",
+            "content": "I'm a recent graduate majoring in Information Technology. <br>Currently, I'm focused on improving my skills as a Frontend Engineer<br> where I can combine my passion for design and development.<br> Learning UI/UX has always captured my interest and motivated. This passion<br> also extends to animation, editing, and digital art."
+        },
+        "card": {
+            "cardhero1": "Frontend Developer",
+            "cardtitle1": "I have experience building user interfaces <br>from scratch for both mobile and web<br> platforms, based on UI/UX design.",
+            "cardsub1": "Languages i've worked with:",
+            "cardsubsub1": "Dev tools:",
+            "cardhero2": "Designer",
+            "cardtitle2": "I have experience building user interfaces <br>from scratch for both mobile and web<br> platforms, based on UI/UX design.",
+            "cardsub2": "Design i've work with :",
+            "cardsubsub2": "Design tools:",
+            "cardhero3": "Digital Art",
+            "cardtitle3": "My hobbies include drawing and writing short stories. Occasionally, I explore ways to turn these ideas into 2D animations.",
+            "cardsub3": "Themes i've enjoyed with:",
+            "cardsubsub3": "Digital art tools:"
+        },
+        "project": {
+            "herotitle": "Recent Projects",
+            "sub": "Here are several application projects I've built during my studies and internships"
+        },
+        "webproject": {
+            "webtitle": "My Application Development Project",
+            "webcontent1": "Simple To-Do App Project for the One-Week CodingCamp Class on October 13, 2025",
+            "webbut1": "Go to Website →",
+            "webtools1": "Using:",
+            "webcontent2": "Big Data Clustering Application with K-Means Algorithm - Final Project Exam",
+            "webbut2": "Go to Website →",
+            "webtools2": "Using:",
+            "webcontent3": "The first web project at campus was named 'Flight Form', designed with the concept of building an online flight ticket booking website",
+            "webtools3": "Using:"
+        },
+        "androproject": {
+            "andcontent1": "Online Grocery Store Application during Internship as Frontend Engineer at PT. Akina.id",
+            "andcontent2": "Online Grocery Store Application for Internship Practicum",
+            "andcontent3": "Practicum Project on the Android-Based Form Design",
+            "andbut": "Preview UI",
+            "andmodal": "Mobile UI Preview ",
+            "modalclose": "Showless",
+            "andtools": "Using:"
+        },
+        "designproject": {
+            "designtitle": "My Design & Animation Project",
+            "designpost1": "🔖Commemorative Poster",
+            "designpost2": "🔖Reminder Poster",
+            "animation": "2D Animation",
+            "animation1": "This video created when join as participant on FlipClip Contest to make 2D pixels animation",
+            "animation2": "This video was the first 2D project animation story film that i created",
+            "animplay": "Play Video →",
+            "animmodal": "Preview",
+            "modalclose": "Close"
+        },
+        "contact": {
+            "contactme": "REACH ME NOW"
+        }
+    },
+    "id": {
+        "sidebar": {
+            "tab1": "Tentang",
+            "tab2": "💼 Projek",
+            "tab3": "📞 Kontak"
+        },
+        "hero": {
+            "title": "Frontend Developer, Desainer & <br>Seni Digital",
+            "subtitle": "Tentang saya"
+        },
+        "intro": {
+            "title": "Halo, nama saya Muhammad Ihza Zuhendra. <br>Salam kenal.",
+            "content": "Saya merupakan mahasiswa lulusan dibidang Teknik Informatika.<br> Saat ini, saya berfokus untuk meningkatkan kemampuan saya sebagai Frontend Engineer dalam pengembangan perangkat lunak sekaligus passion dibidang desain. Bergerak dibidang UI/UX memiliki motivasi dan<br> ketertarikan tersendiri bagi saya untuk mendalaminya. Ketertarikan dibidang ini tidak membatasi saya untuk bergerak dibidang animasi, editing dan seni digital."
+        },
+        "card": {
+            "cardhero1": "Frontend Developer",
+            "cardtitle1": "Saya pernah membangun sebuah user interface<br>untuk platform mobile dan web,<br> berdasarkan desain UI/UX",
+            "cardsub1": "Bahasa yang digunakan:",
+            "cardsubsub1": "Alat pengembangan:",
+            "cardhero2": "Desainer",
+            "cardtitle2": "Saya senang membuat konten sederhana dan mendesain poster peringatan hari-hari besar sekaligus mendesain user experiences.",
+            "cardsub2": "Perihal yang didesain:",
+            "cardsubsub2": "Alat desain:",
+            "cardhero3": "Seni Digital",
+            "cardtitle3": "Saya memiliki hobi sebagai pelukis dan pengarang cerita pendek. Terkadang mengimplementasikannya kedalam bentuk animasi 2D.",
+            "cardsub3": "Tema yang disenangi:",
+            "cardsubsub3": "Alat seni digital:"
+        },
+        "project": {
+            "herotitle": "Kumpulan Projek",
+            "sub": "Ini merupakan kumpulan projek yang dikerjakan saat masa pembelajaran dan juga magang"
+        },
+        "webproject": {
+            "webtitle": "Projek Pengembangan Aplikasi",
+            "webcontent1": "Projek aplikasi To-Do sederhana untuk 1 minggu kelas CodingCamp pada tanggal 31 Oktober, 2025",
+            "webbutton1": "Menuju Website →",
+            "webtools1": "Menggunakan:",
+            "webcontent2": "Aplikasi pengelompokkan Big Data menggunakan algoritma K-Means - Projek ujian akhir",
+            "webbut2": "Menuju Website →",
+            "webtools2": "Menggunakan:",
+            "webcontent3": "Web projek pertama di kampus menggunakan judul 'Flight Form', dengan tema desain membangun web pemesaan tiket pesawat online",
+            "webtools3": "Menggunakan:"
+        },
+        "androproject": {
+            "andcontent1": "Aplikasi toko grosir online selama magang sebagai Frontend Engineer di PT.Akina.id",
+            "andcontent2": "Aplikasi toko grosir online sebagai laporan pratikum magang",
+            "andcontent3": "Projek praktikum untuk membangun aplikasi Android berdasarkan desain",
+            "andbut": "Lihat UI",
+            "andmodal": "Tampilan UI Mobile",
+            "modalclose": "Tutup",
+            "andtools": "Menggunakan:"
+        },
+        "designproject": {
+            "designtitle": "Projek Desain & Animasi",
+            "designpost1": "🔖Poster Peringatan Hari Nasional",
+            "designpost2": "🔖Poster Harian",
+            "animation": "Animasi 2D",
+            "animation1": "Ini merupakan partisipasi kontes video membuat animasi pixel 2D oleh FlipaClip",
+            "animation2": "Projek animasi cerita singkat 2D pertama yang saya buat",
+            "animplay": "Putar Video →",
+            "animmodal": "Tampilan",
+            "modalclose": "Tutup"
+        },
+        "contact": {
+            "contactme": "HUBUNGI SEKARANG"
+        }
+    }
+}

@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ihza's Portfolio</title>
+    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- <img src="assets/images/foto-profil.png"> -->
+
+    <div class="pr-5 pt-5 flex justify-end gap-2">
+        <button id="btn-id" class="lang-btn px-3 py-1 rounded" onclick="setLang('id')">id| Bahasa</button>
+        <button id="btn-en" class="lang-btn px-3 py-1 rounded" onclick="setLang('en')">en| English</button>
+    </div>
+
+
+</head>
+
+<body>
+    <!-- Batas Putih Atas -->
+    <div class="w-screen bg-white h-10"></div>
+
+    <!-- Aksesori Atas -->
+    <div id="topacc1" data-include="sections/assets/topacc1.html"></div>
+
+    <!-- Main Content -->
+    <div class="w-screen bg-indigo-600 flex-col justify-center">
+
+        <!-- SideBar -->
+        <div class="sidebar-wrapper">
+            <div class="sidebar">
+
+                <div class="pen-cap"></div>
+                <ul>
+                    <li>
+                        <a href="#about" data-section="about">
+                            <span>👤</span>
+                            <span data-key="sidebar.tab1">About</span> </a>
+                    </li>
+                    <li><a href="#projects" data-section="projects" data-key="sidebar.tab2">💼 Projects</a></li>
+                    <li><a href="#contact" data-section="contact" data-key="sidebar.tab3">📞 Contact</a></li>
+                </ul>
+                <div class="pen-tip"></div>
+
+            </div>
+        </div>
+
+        <!-- Isi Konten -->
+        <div class="w-screen">
+
+            <!-- Konten "About" -->
+            <section id="about" data-section="about" data-include="sections/about/about.html"></section>
+
+            <div class="bg-indigo-800 h-20 mt-10 "></div>
+
+            <div class="bg-indigo-800 hover:bg-[#25049b] hover:shadow-[10px_12px_20px_#3b35e3eb] 
+            hover:shadow-xl hover:scale-[1.10] z-0 transition-all duration-300 flex justify-center">
+                <section id="c2about" data-section="about" data-include="sections/about/c2about.html"></section>
+            </div>
+
+            <div class="bg-indigo-800 h-50"></div>
+
+
+            <div class="flex flex-row flex-wrap justify-center gap-5 bg-white">
+
+                <!-- Card 1 -->
+                <!-- <div class="transition duration-300 hover:translate-x-13 hover:z-20 -mt-20"> -->
+                <div class="transition duration-500 hover:scale-[1.04] hover:z-20 -mt-20">
+
+                    <div id="topacc2" data-include="sections/assets/topacc2.html"></div>
+
+                    <div class="bg-white h-205 w-100 shadow-xl/30">
+                        <section id="card1" data-section="about" data-include="sections/about/card1.html"></section>
+                    </div>
+
+                </div>
+
+                <!-- Card 2 -->
+                <div class=" transition duration-500 hover:scale-[1.04] hover:z-20 -mt-20">
+
+                    <div id="topacc2" data-include="sections/assets/topacc2.html"></div>
+
+                    <div class="bg-white h-205 w-100 shadow-xl/30">
+                        <section id="card2" data-section="about" data-include="sections/about/card2.html"></section>
+                    </div>
+
+                </div>
+
+                <!-- Card 3 -->
+                <div class=" transition duration-500 hover:scale-[1.04] hover:z-20 -mt-20">
+
+                    <div id="topacc2" data-include="sections/assets/topacc2.html"></div>
+
+                    <div class="bg-white h-205 w-100 shadow-xl/30">
+                        <section id="card3" data-section="about" data-include="sections/about/card3.html"></section>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Konten "Projek" Title -->
+            <div class="w-full pt-50 bg-white shadow-[inset_0_-10px_4px_0.5px_rgba(0,0,0,0.5)]"></div>
+
+            <div id="cover-border" data-include="sections/projects/project2.html"></div>
+
+            <div class="flex flex-col justify-center items-center bg-white">
+                <section id="projects" data-section="projects" data-include="sections/projects/project.html">
+                </section>
+            </div>
+
+            <div id="webtittle" data-include="sections/projects/webtittle.html"></div>
+
+            <!-- Web App  -->
+            <div class="flex flex-row flex-wrap justify-center gap-3 bg-white">
+
+                <section class="w-85 h-75 shadow-xl/5" id="webproject1" data-section="projects"
+                    data-include="sections/projects/web/webproject.html"></section>
+
+                <section class="w-85 h-75 shadow-xl/5" id="webproject2" data-section="projects"
+                    data-include="sections/projects/web/webproject2.html"></section>
+
+                <section class="w-85 h-75 shadow-xl/5" id="webproject3" data-section="projects"
+                    data-include="sections/projects/web/webproject3.html"></section>
+
+            </div>
+
+            <div id="border" data-include="sections/assets/border.html"></div>
+
+            <!-- Android App  -->
+            <div class="flex flex-row flex-wrap items-center justify-center gap-3 bg-white">
+
+                <section class="w-85 h-95 shadow-xl/5" id="andproject" data-section="projects"
+                    data-include="sections/projects/android/andproject.html"></section>
+
+                <section class="w-85 h-95 shadow-xl/5" id="andproject2" data-section="projects"
+                    data-include="sections/projects/android/andproject2.html"></section>
+
+                <section class="w-85 h-95 shadow-xl/5" id="andproject3" data-section="projects"
+                    data-include="sections/projects/android/andproject3.html"></section>
+
+            </div>
+
+            <!-- Design Projek -->
+            <div id="designtittle" data-include="sections/projects/designtittle.html"></div>
+
+            <div class="flex flex-col flex-wrap justify-center items-center bg-indigo-600">
+
+                <div class="flex flex-row flex-wrap justify-center items-center gap-10 bg-indigo-600 pt-15">
+
+                    <section id="designproject" data-section="projects"
+                        data-include="sections/projects/design/design.html">
+                    </section>
+
+                    <section id="designproject2" data-section="projects"
+                        data-include="sections/projects/design/design2.html">
+                    </section>
+
+                </div>
+
+                <div id="border2" data-include="sections/assets/border2.html"></div>
+
+                <div class="flex flex-wrap justify-center items-center bg-indigo-600 pb-60">
+
+                    <section id="animationproject" data-section="projects"
+                        data-include="sections/projects/design/animation.html">
+                    </section>
+
+                </div>
+
+                <div id="design-footer" data-include="sections/projects/designfooter.html"></div>
+
+                <div class="w-full pb-50 bg-white border-t-2 shadow-[inset_0_15px_4px_0.5px_rgba(0,0,0,0.5)]"></div>
+
+            </div>
+
+            <!-- Contact Trigger -->
+            <div class="flex flex-wrap justify-center items-center bg-white w-screen">
+                <section id="animationproject" data-section="contact"></section>
+            </div>
+
+            <!-- Contact -->
+            <div class="flex flex-col flex-wrap justify-center items-center bg-white pt-50">
+                <div id="contact" data-section="contact" class="flex-col justify-center items-center"></div>
+            </div>
+
+            <section id="contact2" data-section="contact" data-include="sections/contact/contact.html"></section>
+
+            <div class="flex flex-col flex-wrap justify-center items-center bg-indigo-600 pt-30">
+                <div id="contact3" data-section="contact" class="flex-col justify-center items-center ">
+                    <footer>
+                        <p class="my-4 text-white">&copy; 2025 Ihza's Portfolio</p>
+                    </footer>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <!-- Cap-Tip Scroll -->
+    <script src="src/js/tip-cap-sidebar.js"></script>
+    <!-- Eksternal Input Konten -->
+    <script src="src/js/include.js"></script>
+    <!-- Sidebar Slider Efek  -->
+    <script src="src/js/scroll-float.js"></script>
+    <!-- Sidebar Aktive -->
+    <script src="src/js/scrollspy.js"></script>
+    <!-- Modal  -->
+    <script src="src/js/modal-slider.js"></script>
+    <script src="src/js/modal-video.js"></script>
+    <!-- Image Corousel Slider Efeke -->
+    <script src="src/js/design-slider.js"></script>
+    <!-- Languange Json file -->
+    <script src="src/js/lang.js"></script>
+
+
+
+
+
+</body>
+
+</html>
