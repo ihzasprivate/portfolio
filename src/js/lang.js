@@ -45,6 +45,6 @@ if (!window.__langInit__) {
   function getLangJsonPath() {
     // Sesuaikan jalur sesuai struktur folder kamu
     // Contoh: jika lang.json ada di /src/lang.json
-    return '/src/js/lang.json';
+    return 'src/js/lang.json';
   }
 }
