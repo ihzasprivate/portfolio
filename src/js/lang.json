@@ -2,7 +2,7 @@
     "en": {
         "sidebar": {
             "tab1": "About",
-            "tab2": "💼 Projects",
+            "tab2": "Projects",
             "tab3": "📞 Contact"
         },
         "hero": {
@@ -69,7 +69,7 @@
     "id": {
         "sidebar": {
             "tab1": "Tentang",
-            "tab2": "💼 Projek",
+            "tab2": "Projek",
             "tab3": "📞 Kontak"
         },
         "hero": {
