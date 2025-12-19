@@ -28,6 +28,41 @@
     /* penting agar scale tidak geser */
 }
 
+.sidebar-toggle {
+    position: fixed;
+    top: 50%;
+    left: calc(14vh + 2%);
+    /* sesuaikan dengan lebar sidebar */
+    transform: translateY(-50%);
+    z-index: 20;
+    background: #5202ac;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.sidebar-toggle:active {
+    transform: scale(0.9);
+}
+
+.sidebar.hidden {
+    transform: translateY(-50%) translateX(-120%);
+    opacity: 0;
+    pointer-events: none;
+}
+
+.sidebar-toggle.mirrored {
+    left: 0.5rem;
+    transform: translateY(-50%) rotate(180deg);
+    opacity: 0.3;
+}
+
+
+
+
 @keyframes fadeIn {
     to {
         opacity: 1;

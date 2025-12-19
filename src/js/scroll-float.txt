@@ -1,13 +1,8 @@
 // scroll-float.js
-(() => {
   const sidebar = document.querySelector(".sidebar");
   let lastScrollY = window.scrollY;
-  let scrollTimeout;
 
   window.addEventListener("scroll", () => {
-    // kalau sidebar hidden, jangan jalankan efek scroll
-    if (sidebar.classList.contains("hidden")) return;
-
     const currentScrollY = window.scrollY;
     const direction = currentScrollY > lastScrollY ? "down" : "up";
 
@@ -22,17 +17,21 @@
     lastScrollY = currentScrollY;
 
     // Reset efek setelah scroll berhenti
-    clearTimeout(scrollTimeout);
+    clearTimeout(window.scrollTimeout);
+
     if (direction === "down") {
-      scrollTimeout = setTimeout(() => {
+      window.scrollTimeout = setTimeout(() => {
         sidebar.style.transform = "translateY(-10%)";
         sidebar.style.boxShadow = "0 8px 100px rgb(255, 255, 255)";
       }, 300);
     } else {
-      scrollTimeout = setTimeout(() => {
+      window.scrollTimeout = setTimeout(() => {
         sidebar.style.transform = "translateY(10%)";
         sidebar.style.boxShadow = "0 8px 100px rgb(255, 255, 255)";
       }, 300);
     }
+
   });
-})();
+
+
+
